@@ -43,9 +43,15 @@ export const presentationsManifest: PresentationManifestItem[] = [
     "href": "https://raw.githubusercontent.com/Nexus-Science-Club/Nexus-Site-Improved/main/presentations/microscopy/Sistemul%20digestiv.pdf"
   },
   {
-    "id": "microscopy/Țesutul conjunctiv.pdf",
-    "subject": "microscopy",
+    "id": "dissections/Țesutul conjunctiv.pdf",
+    "subject": "dissections",
     "title": "Țesutul conjunctiv",
-    "href": "https://raw.githubusercontent.com/Nexus-Science-Club/Nexus-Site-Improved/main/presentations/microscopy/%C8%9Aesutul%20conjunctiv.pdf"
+    "href": "https://raw.githubusercontent.com/Nexus-Science-Club/Nexus-Site-Improved/main/presentations/dissections/%C8%9Aesutul%20conjunctiv.pdf"
+  },
+   {
+    "id": "dissections/Țesuturile epiteliale.pdf",
+    "subject": "dissections",
+    "title": "Țesuturile epiteliale",
+    "href": "https://raw.githubusercontent.com/Nexus-Science-Club/Nexus-Site-Improved/main/presentations/dissections/%C8%9Aesuturile%20epiteliale.pdf"
   }
 ];
