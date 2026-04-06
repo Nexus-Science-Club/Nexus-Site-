@@ -4,9 +4,11 @@ import path from 'node:path';
 const workspaceRoot = process.cwd();
 const presentationsDir = path.join(workspaceRoot, 'presentations');
 const outputFile = path.join(workspaceRoot, 'src', 'data', 'presentationsManifest.ts');
+const githubRepository = process.env.GITHUB_REPOSITORY ?? 'Nexus-Science-Club/Nexus-Site-Improved';
+const githubRefName = process.env.GITHUB_REF_NAME ?? 'main';
 const rawBase =
   process.env.PRESENTATIONS_RAW_BASE ??
-  'https://raw.githubusercontent.com/Nexus-Science-Club/Nexus-Site-/main/presentations';
+  `https://raw.githubusercontent.com/${githubRepository}/${githubRefName}/presentations`;
 
 const toPosix = (value) => value.split(path.sep).join('/');
 

@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 
 // Components
@@ -97,7 +97,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 export default function App() {
   return (
     <LanguageProvider>
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router>
         <AppContent />
       </Router>
     </LanguageProvider>

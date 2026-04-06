@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Nexus Science Club Site
 
-# Run and deploy your AI Studio app
+Vite + React site configured for GitHub Pages deployment.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/5ef0a0b7-9cfa-459f-a7d4-ebdce8984e80
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
+## Run locally
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Start development server:
    `npm run dev`
+
+## Build locally
+
+`npm run build`
+
+## Deploy from GitHub (recommended)
+
+This repository includes a workflow at `.github/workflows/deploy.yml` that deploys automatically to GitHub Pages on push to `main`.
+
+1. Push this project to GitHub.
+2. In GitHub, open `Settings -> Pages`.
+3. Under `Source`, select `GitHub Actions`.
+4. Push to `main` (or run the workflow manually from the Actions tab).
+
+Your site will be published by the workflow from the `dist` artifact.
