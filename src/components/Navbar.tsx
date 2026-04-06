@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { assetPath } from '../utils/assetPath';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +37,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center w-full">
           <Link to="/" className="flex items-center gap-2.5 group">
             <img
-              src="/nexus-logo.png"
+              src={assetPath('nexus-logo.png')}
               alt="NEXUS logo"
               className="w-11 h-11 object-contain scale-[1.2] origin-center transition-transform duration-300 group-hover:scale-[1.28]"
             />

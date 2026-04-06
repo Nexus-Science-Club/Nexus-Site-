@@ -2,6 +2,7 @@ import { PageTransition } from '../components/PageTransition';
 import { motion } from 'motion/react';
 import { Lightbulb, Users, FlaskConical, Handshake } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { assetPath } from '../utils/assetPath';
 
 export const About = () => {
   const { language } = useLanguage();
@@ -126,7 +127,7 @@ export const About = () => {
             >
               <div className="absolute -inset-3 bg-gradient-to-r from-nexus-purple/20 to-nexus-blue/20 blur-2xl opacity-40"></div>
               <img
-                src="/about-group.jpg"
+                src={assetPath('about-group.jpg')}
                 alt={language === 'en' ? 'Nexus Club group photo' : 'Fotografie de grup Nexus Club'}
                 className="relative z-10 w-full h-[470px] object-cover rounded-3xl border border-nexus-purple/25 shadow-[0_22px_55px_rgba(0,0,0,0.45)]"
               />
@@ -168,13 +169,13 @@ export const About = () => {
             <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center font-orbitron tracking-widest">{content.galleryTitle}</h3>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
               <motion.div whileHover={{ y: -8 }} className="col-span-2 lg:col-span-2 rounded-3xl overflow-hidden border border-nexus-purple/20">
-                <img src="/about-lab-1.jpg" alt="Nexus science activity" className="w-full h-[260px] md:h-[360px] object-cover" />
+                <img src={assetPath('about-lab-1.jpg')} alt="Nexus science activity" className="w-full h-[260px] md:h-[360px] object-cover" />
               </motion.div>
               <motion.div whileHover={{ y: -8 }} className="rounded-3xl overflow-hidden border border-nexus-purple/20">
-                <img src="/about-lab-2.jpg" alt="Nexus experimentation session" className="w-full h-[260px] md:h-[360px] object-cover" />
+                <img src={assetPath('about-lab-2.jpg')} alt="Nexus experimentation session" className="w-full h-[260px] md:h-[360px] object-cover" />
               </motion.div>
               <motion.div whileHover={{ y: -8 }} className="rounded-3xl overflow-hidden border border-nexus-purple/20">
-                <img src="/about-lab-3.jpg" alt="Nexus club laboratory moment" className="w-full h-[260px] md:h-[360px] object-cover" />
+                <img src={assetPath('about-lab-3.jpg')} alt="Nexus club laboratory moment" className="w-full h-[260px] md:h-[360px] object-cover" />
               </motion.div>
             </div>
           </motion.div>

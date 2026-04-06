@@ -142,15 +142,15 @@ export const Home = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <a href="/fields" className="px-8 py-4 bg-nexus-white text-nexus-bg font-orbitron font-bold text-sm tracking-widest rounded-full hover:scale-105 transition-transform flex items-center gap-3 group shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+              <Link to="/fields" className="px-8 py-4 bg-nexus-white text-nexus-bg font-orbitron font-bold text-sm tracking-widest rounded-full hover:scale-105 transition-transform flex items-center gap-3 group shadow-[0_0_30px_rgba(255,255,255,0.3)]">
                 {exploreLabel}
                 <div className="w-6 h-6 rounded-full bg-nexus-bg/10 flex items-center justify-center group-hover:translate-x-1 transition-transform">
                   <ArrowRight className="w-3 h-3" />
                 </div>
-              </a>
-              <a href="/join" className="px-8 py-4 glass-pill font-orbitron font-bold text-sm tracking-widest hover:bg-white/10 transition-colors border-white/20">
+              </Link>
+              <Link to="/join" className="px-8 py-4 glass-pill font-orbitron font-bold text-sm tracking-widest hover:bg-white/10 transition-colors border-white/20">
                 {t('home.joinNexus')}
-              </a>
+              </Link>
             </div>
           </motion.div>
 

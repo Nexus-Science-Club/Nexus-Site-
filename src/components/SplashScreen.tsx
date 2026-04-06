@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { assetPath } from '../utils/assetPath';
 
 export const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
   return (
@@ -16,7 +17,7 @@ export const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
         className="relative"
       >
         <img
-          src="/nexus-logo.png"
+          src={assetPath('nexus-logo.png')}
           alt="NEXUS logo"
           className="w-24 h-24 object-contain animate-spin-slow drop-shadow-[0_0_24px_rgba(176,102,255,0.45)]"
         />

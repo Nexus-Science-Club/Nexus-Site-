@@ -97,7 +97,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 export default function App() {
   return (
     <LanguageProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <AppContent />
       </Router>
     </LanguageProvider>

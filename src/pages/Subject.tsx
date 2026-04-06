@@ -3,6 +3,7 @@ import { PageTransition } from '../components/PageTransition';
 import { motion } from 'motion/react';
 import { ArrowLeft, FileText, Download, Microscope, FlaskConical, Scissors, Atom } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { presentationsManifest } from '../data/presentationsManifest';
 
 type PresentationItem = {
   id: string;
@@ -10,41 +11,15 @@ type PresentationItem = {
   href: string;
 };
 
-const pdfModules = import.meta.glob('../../presentations/**/*.pdf', {
-  eager: true,
-  query: '?url',
-  import: 'default'
-}) as Record<string, string>;
-
-const formatPdfTitle = (fileName: string) => {
-  const noExtension = fileName.replace(/\.pdf$/i, '');
-  return noExtension.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
-};
-
-const presentationsBySubject = Object.entries(pdfModules).reduce<Record<string, PresentationItem[]>>(
-  (acc, [filePath, href]) => {
-    const normalizedPath = filePath.replace(/\\/g, '/');
-    const parts = normalizedPath.split('/');
-    const subject = parts[parts.length - 2];
-    const fileName = parts[parts.length - 1];
-
-    if (!subject || !fileName) return acc;
-    if (!acc[subject]) acc[subject] = [];
-
-    acc[subject].push({
-      id: normalizedPath,
-      title: formatPdfTitle(fileName),
-      href
-    });
-
-    return acc;
-  },
-  {}
-);
-
-Object.values(presentationsBySubject).forEach((items) => {
-  items.sort((a, b) => a.title.localeCompare(b.title, 'ro', { sensitivity: 'base' }));
-});
+const presentationsBySubject = presentationsManifest.reduce<Record<string, PresentationItem[]>>((acc, item) => {
+  if (!acc[item.subject]) acc[item.subject] = [];
+  acc[item.subject].push({
+    id: item.id,
+    title: item.title,
+    href: item.href,
+  });
+  return acc;
+}, {});
 
 export const Subject = () => {
   const { subjectId } = useParams<{ subjectId: string }>();

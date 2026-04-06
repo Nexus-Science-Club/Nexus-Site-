@@ -1,4 +1,6 @@
 import { Instagram, Youtube, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { assetPath } from '../utils/assetPath';
 
 export const Footer = () => {
   return (
@@ -7,7 +9,7 @@ export const Footer = () => {
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 mb-6">
             <img
-              src="/nexus-logo.png"
+              src={assetPath('nexus-logo.png')}
               alt="NEXUS logo"
               className="w-8 h-8 object-contain"
             />
@@ -26,10 +28,10 @@ export const Footer = () => {
         <div>
           <h4 className="font-orbitron font-bold mb-6 text-sm uppercase tracking-widest">Quick Links</h4>
           <ul className="space-y-4 font-mono text-xs text-nexus-white/50">
-            <li><a href="/about" className="hover:text-nexus-purple transition-colors">About Us</a></li>
-            <li><a href="/fields" className="hover:text-nexus-purple transition-colors">Fields of Study</a></li>
-            <li><a href="/team" className="hover:text-nexus-purple transition-colors">Our Team</a></li>
-            <li><a href="/events" className="hover:text-nexus-purple transition-colors">Upcoming Events</a></li>
+            <li><Link to="/about" className="hover:text-nexus-purple transition-colors">About Us</Link></li>
+            <li><Link to="/fields" className="hover:text-nexus-purple transition-colors">Fields of Study</Link></li>
+            <li><Link to="/team" className="hover:text-nexus-purple transition-colors">Our Team</Link></li>
+            <li><Link to="/events" className="hover:text-nexus-purple transition-colors">Upcoming Events</Link></li>
           </ul>
         </div>
 

@@ -2,11 +2,12 @@ import { PageTransition } from '../components/PageTransition';
 import { motion } from 'motion/react';
 import { HeartHandshake } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { assetPath } from '../utils/assetPath';
 
 const sponsors = [
-  { name: 'APCNNG', logo: '/sponsors/apcnng.png' },
-  { name: 'Raibak S.R.L.', logo: '/sponsors/raibak-logo.png' },
-  { name: 'Fondul Stiintescu', logo: '/sponsors/stiintescu-logo.png' },
+  { name: 'APCNNG', logo: assetPath('sponsors/apcnng.png') },
+  { name: 'Raibak S.R.L.', logo: assetPath('sponsors/raibak-logo.png') },
+  { name: 'Fondul Stiintescu', logo: assetPath('sponsors/stiintescu-logo.png') },
 ];
 
 export const Sponsors = () => {
