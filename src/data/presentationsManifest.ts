@@ -48,7 +48,7 @@ export const presentationsManifest: PresentationManifestItem[] = [
     "title": "Țesutul conjunctiv",
     "href": "https://raw.githubusercontent.com/Nexus-Science-Club/Nexus-Site-Improved/main/presentations/dissections/%C8%9Aesutul%20conjunctiv.pdf"
   },
-   {
+  {
     "id": "dissections/Țesuturile epiteliale.pdf",
     "subject": "dissections",
     "title": "Țesuturile epiteliale",

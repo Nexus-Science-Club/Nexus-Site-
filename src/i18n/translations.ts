@@ -8,7 +8,7 @@ export const translations = {
       projects: 'Projects',
       team: 'Team',
       sponsors: 'Sponsors',
-      donate: 'Donate',
+      donate: 'Sponsor Us',
       join: 'JOIN'
     },
     home: {
@@ -228,7 +228,7 @@ export const translations = {
       projects: 'Proiecte',
       team: 'Echipă',
       sponsors: 'Sponsori',
-      donate: 'Donează',
+      donate: 'Sponsorizare',
       join: 'ALĂTURĂ-TE'
     },
     home: {
