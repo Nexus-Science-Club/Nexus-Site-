@@ -24,12 +24,8 @@ This repository includes a workflow at `.github/workflows/deploy.yml` that deplo
 
 Your site will be published by the workflow from the `dist` artifact.
 
-## Presentation Drop Zone
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  NEXUS — Presentation Drop Zone
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+## NEXUS — Presentation Drop Zone
+/\
 HOW TO ADD A NEW PRESENTATION TO THE SITE
 ──────────────────────────────────────────
 
