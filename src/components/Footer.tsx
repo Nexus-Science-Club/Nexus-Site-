@@ -46,7 +46,7 @@ export const Footer = () => {
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-nexus-white/30 uppercase tracking-widest">
         <span>© 2026 NEXUS SCIENCE CLUB. ALL RIGHTS RESERVED.</span>
-        <span>DESIGNED BY NEXUS WEB TEAM</span>
+        <span>DESIGNED BY ANDWE1N</span>
       </div>
     </footer>
   );

@@ -6,3 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Presentation drop zone — PDFs here are temporary, don't commit them
+presentations/_drop/*.pdf
+presentations/_drop/*.PDF

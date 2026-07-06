@@ -111,8 +111,8 @@ export const ScheduleSection = ({ language }: { language: string }) => {
               viewport={{ once: true }}
               className="inline-flex items-center gap-2 px-4 py-2 glass-pill mb-6 border-nexus-purple/30"
             >
-              <Calendar className="w-4 h-4 text-nexus-purple" />
-              <span className="font-mono text-[10px] text-nexus-white/90 uppercase tracking-[0.2em] font-bold">
+              <Calendar className="w-4 h-4 text-nexus-white/50" />
+              <span className="font-mono text-[10px] text-nexus-white/50 uppercase tracking-[0.2em] font-bold">
                 30–31 MAI 2026 · CÂMPINA
               </span>
             </motion.div>
@@ -140,9 +140,9 @@ export const ScheduleSection = ({ language }: { language: string }) => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.15 }}
-              className="text-nexus-purple font-mono uppercase tracking-widest text-sm"
+              className="text-nexus-white/45 font-mono uppercase tracking-widest text-sm"
             >
-              {language === 'en' ? 'PROGRAM / SCHEDULE' : 'PROGRAM / ORAR'}
+              {language === 'en' ? 'EVENT RECAP / SCHEDULE' : 'RECAP EVENIMENT / ORAR'}
             </motion.p>
           </div>
           <div className="w-24 h-1 bg-gradient-to-r from-nexus-purple to-nexus-blue flex-shrink-0"></div>

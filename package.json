@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
+    "add-presentation": "node scripts/add-presentation.mjs",
     "generate:presentations": "node scripts/generate-presentations-manifest.mjs",
     "build": "npm run generate:presentations && vite build",
     "preview": "vite preview",

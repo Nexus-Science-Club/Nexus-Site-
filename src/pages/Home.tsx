@@ -4,7 +4,6 @@ import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from
 import { ArrowRight, Atom, Sparkles, FlaskConical, Microscope, Dna } from 'lucide-react';
 import { PageTransition } from '../components/PageTransition';
 import { useLanguage } from '../contexts/LanguageContext';
-import { ScheduleSection } from '../components/ScheduleSection';
 
 export const Home = () => {
   const { t, language } = useLanguage();
@@ -234,7 +233,6 @@ export const Home = () => {
         </div>
       </section>
 
-      <ScheduleSection language={language} />
     </PageTransition>
   );
 };

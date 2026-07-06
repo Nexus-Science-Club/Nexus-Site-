@@ -3,7 +3,7 @@ import { ScheduleSection } from '../components/ScheduleSection';
 import { motion } from 'motion/react';
 import {
   Calendar, MapPin, Microscope, FlaskConical, Atom,
-  Heart, Compass, Map, Trophy, Sparkles,
+  Heart, Compass, Map, Trophy,
 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -23,23 +23,21 @@ export const Events = () => {
   const content = language === 'en'
     ? {
         pageTitle: 'EVENTS',
-        pageSubtitle: 'UPCOMING ACTIVITIES',
-        badge: 'UPCOMING EVENT',
+        pageSubtitle: 'PAST ACTIVITIES',
+        badge: 'PAST EVENT',
         eventTitle: 'NEXUS SCIENCE FAIR',
         date: '30–31 MAY 2026',
         location: 'CÂMPINA, PRAHOVA',
-        desc: 'Nexus Science Fair is our open science event, welcoming everyone curious about the world around them. Over two days, visitors can explore live experiments in biology, chemistry, and physics, tackle our escape room, join the treasure hunt through central Câmpina, and watch the awards ceremony for the best science projects.',
-        scheduleTitle: 'FULL SCHEDULE',
+        desc: 'The Nexus Science Fair brought together students, families, and curious minds from across the region for two unforgettable days of science. Visitors explored live experiments in biology, chemistry, and physics, tackled our escape room, joined the treasure hunt through central Câmpina, and celebrated the best science projects at the awards ceremony.',
       }
     : {
         pageTitle: 'EVENIMENTE',
-        pageSubtitle: 'ACTIVITĂȚI VIITOARE',
-        badge: 'EVENIMENT VIITOR',
+        pageSubtitle: 'ACTIVITĂȚI TRECUTE',
+        badge: 'EVENIMENT TRECUT',
         eventTitle: 'NEXUS SCIENCE FAIR',
         date: '30–31 MAI 2026',
         location: 'CÂMPINA, PRAHOVA',
-        desc: 'Nexus Science Fair este evenimentul nostru de știință deschis publicului, adresat tuturor celor curioși despre lumea din jur. Pe parcursul a două zile, vizitatorii pot explora experimente live în biologie, chimie și fizică, participa la escape room-ul nostru, vâna comori în centrul Câmpinei și urmări premierea celor mai bune proiecte științifice.',
-        scheduleTitle: 'PROGRAM COMPLET',
+        desc: 'Nexus Science Fair a adus împreună elevi, familii și minți curioase din întreaga regiune pentru două zile de neuitat dedicate științei. Vizitatorii au explorat experimente live în biologie, chimie și fizică, au participat la escape room-ul nostru, au vânat comori în centrul Câmpinei și au celebrat cele mai bune proiecte la ceremonia de premiere.',
       };
 
   return (
@@ -80,9 +78,9 @@ export const Events = () => {
                     <Calendar className="w-7 h-7 text-nexus-purple" />
                   </div>
                   <div>
-                    <div className="inline-flex items-center gap-2 px-3 py-1 glass-pill border-nexus-purple/35 mb-2">
-                      <Sparkles className="w-3 h-3 text-nexus-purple" />
-                      <span className="font-mono text-[10px] text-nexus-purple uppercase tracking-[0.2em] font-bold">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 glass-pill border-nexus-white/20 mb-2">
+                      <Trophy className="w-3 h-3 text-nexus-white/50" />
+                      <span className="font-mono text-[10px] text-nexus-white/50 uppercase tracking-[0.2em] font-bold">
                         {content.badge}
                       </span>
                     </div>
